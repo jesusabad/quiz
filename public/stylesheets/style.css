@@ -6,14 +6,10 @@ body                 { font: 16px Helvetica, sans-serif; background: #BAB9DA;}
 	                   margin-bottom: 1px; color: black; }
 
 header, nav, section { background: #eee; text-align: center;}
-section > div 		 {padding: 20px; height: 250px}
+section > div 		 {padding: 20px; height: 300px}
 footer               { background: #eee; text-align: center;}
 
 ul                   { list-style-type: none;}
 nav li               { margin: 0px 10px 0px 0px; display: inline;}
 
-img#imagen           { display: block; 
-	                   margin: auto;
-	                   width: 90%;
-	                   max-height: 410px;
-	                   padding: 5%;}
+img                  { border-radius: 50%; height:50px; width:50px;}
