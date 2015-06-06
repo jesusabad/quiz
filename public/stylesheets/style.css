@@ -1,8 +1,19 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+*                    { margin: 0; padding: 0; }
+body                 { font: 16px Helvetica, sans-serif; background: #BAB9DA;}
 
-a {
-  color: #00B7FF;
-}
+#page-wrap           { margin: 2% auto; color: white; }
+#page-wrap > .main   { border: 1px solid #000099; padding: 1%; 
+	                   margin-bottom: 1px; color: black; }
+
+header, nav, section { background: #eee; text-align: center;}
+section > div 		 {padding: 20px; height: 250px}
+footer               { background: #eee; text-align: center;}
+
+ul                   { list-style-type: none;}
+nav li               { margin: 0px 10px 0px 0px; display: inline;}
+
+img#imagen           { display: block; 
+	                   margin: auto;
+	                   width: 90%;
+	                   max-height: 410px;
+	                   padding: 5%;}

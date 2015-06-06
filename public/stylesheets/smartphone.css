@@ -1,0 +1,6 @@
+
+body             { font-size: small; background: #181E4A; }
+
+section          {height: 150px}
+span, section h3 {display: none;}
+#page-wrap:after { content: "Smartphone Layout"; }
