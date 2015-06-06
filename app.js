@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var partials = require('express-partials'); // Añadimos un nuevo módulo
 
 var routes = require('./routes/index');
 //var users = require('./routes/users');   ** no lo vamos a usar **
@@ -21,6 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(partials());  // Se invoca con () para generar el MW a instalar
 
 app.use('/', routes);
 //app.use('/users', users);   ** no lo vamos a usar **
