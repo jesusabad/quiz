@@ -7,9 +7,10 @@ var quizController = require('../controllers/quiz_controller');
 router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz' }); // Cambiamos el de por defecto 'Express' por 'Quiz'
 });
-// Configuramos las rutas a question y answer
-router.get('/quizes/question', quizController.question);
-router.get('/quizes/answer', quizController.answer);
+// Definición de rutas de /quizes
+router.get('/quizes',                      quizController.index);
+router.get('/quizes/:quizId(\\d+)',        quizController.show);
+router.get('/quizes/:quizId(\\d+)/answer', quizController.answer);
 // Añadimos una nueva página para Créditos
 router.get('/author', function(req, res) {
   res.render('author', {autor: 'Jesús Abad Luque'});

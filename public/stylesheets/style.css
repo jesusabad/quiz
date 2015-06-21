@@ -6,8 +6,9 @@ body                 { font: 16px Helvetica, sans-serif; background: #BAB9DA;}
 	                   margin-bottom: 1px; color: black; }
 
 header, nav, section { background: #eee; text-align: center;}
-section > div 		 {padding: 20px; height: 300px}
+section > div 		 { padding: 20px; height: 300px}
 footer               { background: #eee; text-align: center;}
+table                { margin: 0 auto;}
 
 ul                   { list-style-type: none;}
 nav li               { margin: 0px 10px 0px 0px; display: inline;}
