@@ -9,6 +9,7 @@ header, nav, section { background: #eee; text-align: center;}
 section > div 		 { padding: 20px; height: 300px}
 footer               { background: #eee; text-align: center;}
 table                { margin: 0 auto;}
+th                   { padding-bottom: 10px; border-bottom: 2px solid #000099; }
 
 ul                   { list-style-type: none;}
 nav li               { margin: 0px 10px 0px 0px; display: inline;}
