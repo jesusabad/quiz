@@ -26,7 +26,7 @@ exports.index = function(req, res) {
     // de lo que haya entre "uno" y "dos".
     models.Quiz.findAll(
       {
-        where: [ "pregunta like ?", "%"+req.query.search.split(" ").join("%")+"%" ]
+        where: [ "lower(pregunta) like lower(?)", "%"+req.query.search.split(" ").join("%")+"%" ]
       }).then( function(quizes) {
         res.render( 'quizes/index.ejs', { quizes: quizes.sort() } );
       }
