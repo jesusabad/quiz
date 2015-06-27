@@ -1,8 +1,10 @@
 
 body             { font-size: small; background: #181E4A; }
 
-section          {height: 200px}
-span, section h3 {display: none;}
+section          { height: 200px }
+span, section h3,label.rem
+                 { display: none; }
+                 
 #page-wrap:after { content: "Smartphone Layout"; }
 
 img              { border-radius: 50%; height:30px; width:30px;}
