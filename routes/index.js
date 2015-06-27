@@ -5,7 +5,7 @@ var quizController = require('../controllers/quiz_controller');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Quiz' }); // Cambiamos el de por defecto 'Express' por 'Quiz'
+  res.render('index', { title: 'Quiz', errors: [] }); // Cambiamos el de por defecto 'Express' por 'Quiz'
 });
 // Autoload de comandos con :quizId
 router.param( 'quizId', quizController.load );  // autoload :quizId
