@@ -17,7 +17,7 @@ router.get('/quizes/new',                  quizController.new);
 router.post('/quizes/create',              quizController.create);
 // Añadimos una nueva página para Créditos
 router.get('/author', function(req, res) {
-  res.render('author', {autor: 'Jesús Abad Luque'});
+  res.render('author', { autor: 'Jesús Abad Luque', errors: [] });
 });
 
 module.exports = router;
