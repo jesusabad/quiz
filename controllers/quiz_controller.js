@@ -28,7 +28,7 @@ exports.index = function(req, res) {
       {
         where: [ "lower(pregunta) like lower(?)", "%"+req.query.search.split(" ").join("%")+"%" ]
       }).then( function(quizes) {
-        res.render( 'quizes/index.ejs', { quizes: quizes.sort() } );
+        res.render( 'quizes/index.ejs', { quizes: quizes.sort(), errors: [] } );
       }
     ).catch(function(error) {next(error);})
   };
