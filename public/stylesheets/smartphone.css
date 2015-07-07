@@ -1,7 +1,7 @@
 
 body             { font-size: small; background: #181E4A; }
 
-section          { height: 200px }
+section > div    { min-height: 200px }
 span, section h3,label.rem
                  { display: none; }
                  
