@@ -2,7 +2,14 @@ var models = require('../models/models.js');
 
 // Autoload :id
 exports.load = function(req, res, next, quizId) {
-  models.Quiz.findById(quizId).then(
+  models.Quiz.find( {
+    where: {
+      id: Number(quizId)
+    },
+    include: [ {
+      model: models.Comment
+    } ]
+  } ).then(
     function(quiz) {
       if (quiz) {
         req.quiz = quiz;
@@ -41,9 +48,9 @@ exports.show = function(req, res) {
 
 // GET /quizes/:id/answer
 exports.answer = function(req, res) {
-  var resultado = 'Incorrecto';
+  var resultado = '&nbsp;Incorrecto&nbsp;';
   if ( req.query.respuesta === req.quiz.respuesta ) {
-    resultado = '¡Correcto!';
+    resultado = '&nbsp;¡Correcto!&nbsp;';
   }
   res.render( 'quizes/answer', { quiz: req.quiz, respuesta: resultado, errors: [] } );
 };

@@ -15,3 +15,13 @@ ul                   { list-style-type: none;}
 nav li               { margin: 0px 10px 0px 0px; display: inline;}
 #ErrorMsgs           { color: #f61; font-size: smaler; }
 img                  { border-radius: 50%; height:50px; width:50px;}
+
+#resalto {
+    background: #d66;
+	animation-name: enrojo;
+    animation-duration: 3s;
+}
+@keyframes enrojo {
+    from { background-color: #BAB9DA; }
+    to   { background-color: #d66; }
+}
