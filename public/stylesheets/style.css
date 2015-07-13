@@ -16,6 +16,8 @@ nav li               { margin: 0px 10px 0px 0px; display: inline;}
 #ErrorMsgs           { color: #f61; font-size: smaler; }
 img                  { border-radius: 50%; height:50px; width:50px;}
 
+.right 				 { float: right; }
+
 #resalto {
 	display: block;
     background: #d66;
