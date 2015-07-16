@@ -2,7 +2,7 @@
 body             { font-size: small; background: #181E4A; }
 
 section > div    { min-height: 200px }
-span, section h3,label.rem
+section h3,label.rem
                  { display: none; }
                  
 #page-wrap:after { content: "Smartphone Layout"; }
