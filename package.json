@@ -22,7 +22,7 @@
     "ejs": "~0.8.5",
     "express-partials": "~0.3.0",
     "sequelize": ">=4.44.4",
-    "pg": "~4.1.1",
+    "pg": "~8.3.3",
     "pg-hstore": "~2.3.2",
     "method-override": "~2.3.3",
     "express-session": "~1.11.3"
